@@ -1,0 +1,42 @@
+    1  ls -l
+    2  ls -ld
+    3  ls
+    4  cd /home/user/praks4
+    5  ls
+    6  nano list.txt
+    7  nano fail9
+    8  nano fail2
+    9  ls
+   10  ls -ld
+   11  ls -l
+   12  exit
+   13  more server.key
+   14  exit
+   15  history
+   16  ls
+   17  su root
+apt-get install git
+   18  mkdir /home/user/skriptimine
+   19  mkdir skriptimine
+   20  cd skriptimine
+   21  git config --global user.name "Anne-Laura Koch"
+   22  git config --global user.email anne-laura.koch@khk.ee
+   23  git config --global core.editor nano
+   24  git init
+   25  mkdir praks1
+   26  cd praks1
+   27  touch git_kasutamine
+   28  history
+   29  history >> git_kasutamine
+remote seadistamine:
+git remote add skriptimine https://github.com/AnneKoch/skriptimine.git
+
+git remote  -v
+
+põhikasutamine:
+
+git add põhikasutamine
+
+git commit -m "Esimene põhikasutamine"
+
+git push -uf skriptimine master

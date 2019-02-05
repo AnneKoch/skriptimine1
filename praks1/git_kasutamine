@@ -28,3 +28,8 @@ apt-get install git
    27  touch git_kasutamine
    28  history
    29  history >> git_kasutamine
+remote seadistamine:
+git remote add skriptimine https://github.com/AnneKoch/skriptimine.git
+
+git remote  -v
+

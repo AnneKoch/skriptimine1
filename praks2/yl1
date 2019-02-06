@@ -6,8 +6,8 @@
 #
 # echo "Tere User!"
 echo -n "Tere"
-echo -n 'whoami | cut -c1 | tr [:lower:] [:upper:]'
-echo -n 'whoami | cut -c2-'
+echo -n `whoami | cut -c1 | tr [:lower:] [:upper:]`
+echo -n `whoami | cut -c2-`
 echo  "!"
 #
-# skripti lopp
+# skripti lopp'

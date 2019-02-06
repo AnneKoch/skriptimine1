@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# info masina tool oleku kohta antud hetkel
+#
+# skripti algus
+#
+echo 
+echo -n "mihhailosa"
+date + "at %H:%M:%S up %H:%M"
+echo
+#
+# skripti lopp

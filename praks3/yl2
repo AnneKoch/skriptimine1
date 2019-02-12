@@ -6,10 +6,8 @@
 #
 echo 
 # jargmised read peavad olema sisestatud yhe reana 
-find /var/ -name "*.log"
--a -type f 2> /dev/null
--exec wc -l {} \; | sort
--g -r | cut -f2 -d" "
+find /var/ -name "*.log" -a -type f 2> /dev/null -exec
+wc -l {} \; | sort -g -r | cut -f2 -d" "
 # yhe reana sisestatud käskude lopp
 echo
 #

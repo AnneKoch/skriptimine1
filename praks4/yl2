@@ -1,16 +1,33 @@
 #!/bin/bash
 #
-# Bussi ekskursioonide korraldamise info
+# serveri seisundi valjastamine
 #
-# Skripti algus
+# skripti algus
 #
-echo -n "Grupis on reisijaid:"
-read reisijate arv grupis on 25 inimest
-echo "Bussis on kohti $kokku 30, tühjaks jäi $neist 5";
-read bussist jäi maha 5 inimest
 echo
+echo
+# inimeste andmed
+echo -n "Sisesta reisijate arv:"
+read reisijad
+# kohtade andmed bussis
+echo -n "Sisesta kohtade arv bussis:"
+read kohad
+#
+# arvutused
+#
+# jagame inimesed busside vahel nii, et koik kohad bussides oleks taidetud-sellega
+# saame teada, palju bussi on vaja
+bussid=`expr $reisijad / $kohad`
+# vaatame, palju on need, kes ei saanud koha bussides-need on yle jaanud reisijad,
+# ehk jaagid, kui k6ik kohad on taidetud
+ylejaanud=`expr $reisijad % $kohad`
+#
+# tulemuste valjastamine
+#
+echo "Kokku on vaja $bussid taisbussi ja sellega jaab veel $ylejaanud inimest ilma kohata"
 #
 # skripti lopp
+
 
 
 

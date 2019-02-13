@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# Bussi ekskursioonide korraldamise info
+#
+# Skripti algus
+#
+echo -n "Grupis on:_reisijat"
+read reisijate arv on 25
+echo "Bussis on kohti kokku $30, tühjaks jäi neist $5";
+read maha jäänute arv on 5
+echo
+#
+# skripti lopp
+
+

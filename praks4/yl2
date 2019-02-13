@@ -4,12 +4,13 @@
 #
 # Skripti algus
 #
-echo -n "Grupis on:_reisijat"
+echo -n "Grupis on reisijaid:"
 read reisijate arv on 25
-echo "Bussis on kohti kokku $30, tühjaks jäi neist $5";
+echo "Bussis on kohti $kokku 30, tühjaks jäi $neist 5";
 read maha jäänute arv on 5
 echo
 #
 # skripti lopp
+
 
 

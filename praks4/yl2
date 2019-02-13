@@ -5,12 +5,13 @@
 # Skripti algus
 #
 echo -n "Grupis on reisijaid:"
-read reisijate arv on 25
+read reisijate arv grupis on 25 inimest
 echo "Bussis on kohti $kokku 30, tühjaks jäi $neist 5";
-read maha jäänute arv on 5
+read bussist jäi maha 5 inimest
 echo
 #
 # skripti lopp
+
 
 
 

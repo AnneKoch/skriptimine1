@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# kolmnurga pindala arvutamine
+#
+# skripti algus
+#
+# kolmnurga kylgede vaartuste sisestamine
+echo -n "Sisesta a kylje vaartus: "
+read a
+echo -n "Sisesta b kylje vaartus: "
+read b
+echo -n "Sisesta c kylje vaartus: "
+read c
+#
+# arvutamine
+#
+# p
+p=$( echo "scale=2;($a+$b+$c)/2" | bc)
+# avaldis, mis on ruutjuures p*(p-a)*(p-b)*(p-c)
+pindala=`echo "scale=2;sqrt($p*($p-$a)*($p-$b)*($p-$c))" | bc`
+# lopp-tulemuse avaldamine
+echo "pindala = $pindala"
+#
+# skripti lopp
+

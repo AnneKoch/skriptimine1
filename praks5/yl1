@@ -1,23 +1,24 @@
 #!/bin/bash
 #
-# Taisnurkse kolmnurga vastaskylje arvutamine
+# hypotenuusi arvutamine
 #
-# Andmete sisestamine
+# skripti algus
+#
 echo -n "Sisesta a kylje vaartus: "
 read a
 echo -n "Sisesta b kylje vaartus: "
 read b
 #
-# a astmes2
-a2=$(($a * $a))
-# b astmes2
-b2=$(($b * $b))
-# c astmes2
-c2=$(($a2 + $b2))
-# c
-c= `echo "scale=2;sqrt($c2)" | bc`
-# c vaartus
-echo "c = $c" 
+# arvutamine
+#
+a_ruut=$(($a ** 2)) #a ruudus
+b_ruut=$(($b **2))  #b ruudus
+c_ruut=$(($a_ruut + $b_ruut))   #c ruudus on  a ruudus ja b ruudus summa
+c=`echo "scale=2;sqrt($c_ruut)" | bc` #bc arvutab ruutjuurt
+echo "c=$c"
+#
+# skripti lopp
+
 
  
 

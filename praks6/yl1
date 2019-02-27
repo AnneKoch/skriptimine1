@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# Arvude vordlemine(paaris voi paaritu)
+#
+# skripti algus
+#
+# arvude sisestamine
+echo -n "Sisesta suvaline taisarv: "
+read arv
+# arvutame jaak 2-ga jagamisel
+jaak=$(($arv % ))
+# 4 % 2 => 0 -> siis on arv paaris
+# 5 % 2 => 1 -> siis on arv paaritu
+if [$jaak -eq 0]
+then
+   echo "$arv on paaris"
+else
+    echo "$arv on paaritu"
+fi
+# tingimuse kontroll on loppenud
+#
+# skripti lopp
+
+

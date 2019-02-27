@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Taisnurkse kolmnurga vastaskylje arvutamine
+#
+# Andmete sisestamine
+echo -n "Sisesta a kylje vaartus: "
+read a
+echo -n "Sisesta b kylje vaartus: "
+read b
+#
+# a astmes2
+a2=$(($a * $a))
+# b astmes2
+b2=$(($b * $b))
+# c astmes2
+c2=$(($a2 + $b2))
+# c
+c= `echo "scale=2;sqrt($c2)" | bc`
+# c vaartus
+echo "c = $c" 
+
+ 
+

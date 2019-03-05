@@ -9,13 +9,13 @@ echo -n "Sisesta suvaline taisarv: "
 read arv
 # arvutame jaak 2-ga jagamisel
 jaak=$(($arv % ))
-# 4 % 2 => 0 -> siis on arv paaris
-# 5 % 2 => 1 -> siis on arv paaritu
-if [$jaak -eq 0]
+# 3 % 2 => 1 -> siis on antud  arv paaritu
+# 8 % 2 => 0 -> siis on antud  arv paaris
+if [$jaak -eq 1]
 then
-   echo "$arv on paaris"
+   echo "$arv on paaritu"
 else
-    echo "$arv on paaritu"
+    echo "$arv on paaris"
 fi
 # tingimuse kontroll on loppenud
 #

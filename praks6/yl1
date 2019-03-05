@@ -7,17 +7,20 @@
 # arvude sisestamine
 echo -n "Sisesta suvaline taisarv: "
 read arv
-# arvutame jaak 2-ga jagamisel
-jaak=$(($arv % ))
-# 8 % 2 => 0 -> siis on antud  arv paaris
-# 3 % 2 => 1 -> siis on antud  arv paaritu
-if [$jaak -eq 0]
+#
+if [$arv -eq paaritu]
 then
-   echo "$arv on paaris"
-else
-    echo "$arv on paaritu"
+   echo  "$arv % 2 => 1"
+#
+# Antud arv on paaritu
+if [$arv -eq paaris]
+then
+   echo "$arv % 2 => 0"
+#
+# Antud arv on paaris
 fi
 #
+# Arvude vordlemise lopp
 # skripti lopp
 
 

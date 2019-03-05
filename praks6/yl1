@@ -8,19 +8,16 @@
 echo -n "Sisesta suvaline taisarv: "
 read arv
 #
-if [$arv -eq paaritu]
+if [$arv -eq 3]
 then
-   echo  "$arv % 2 => 1"
+   echo  "$Antud arv on paaritu"
 #
-# Antud arv on paaritu
-if [$arv -eq paaris]
+if [$arv -eq 8]
 then
-   echo "$arv % 2 => 0"
+   echo "$Antud arv on paaris"
 #
-# Antud arv on paaris
 fi
-#
-# Arvude vordlemise lopp
+# 
 # skripti lopp
 
 

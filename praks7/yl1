@@ -3,7 +3,7 @@
 # enda andmed
 #
 echo -n "Sisesta (oma) vanus: "
-read (oma) vanus
+read vanus
 #
 if test $vanus -ge 18 -a $vanus -lt 63
 then

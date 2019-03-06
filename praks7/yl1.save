@@ -4,11 +4,6 @@
 #
 # skripti algus
 #
-# kasutaja andmed
-#
-echo -n "Sisesta vanuse vaartus: "
-read vaartus
-#
 if test $vanus -gt 0 -a $vanus -lt 11
 then
 	echo "oled laps"

@@ -1,23 +1,17 @@
 #!/bin/bash
 #
-# Kas antud arv on paaris või paaritu
+# Arvude vordlus
 #
 # skripti algus
 #
-# arvude sisestamine
 echo -n "Sisesta suvaline taisarv: "
 read arv
 #
-if [$arv -eq 3]
+if test $arv -gt 1 -a $arv -lt 5
 then
    echo  "$Antud arv on paaritu"
 #
-if [$arv -eq 8]
-then
-   echo "$Antud arv on paaris"
-#
-fi
-# 
+fi # sellega lopetame arvude vordluse
 # skripti lopp
 
 

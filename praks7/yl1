@@ -2,14 +2,13 @@
 #
 # enda andmed
 #
-# skripti algus
-#
 echo -n "Sisesta (oma) vanus: "
 read (oma) vanus
 #
 if test $vanus -ge 18 -a $vanus -lt 63
 then
-	echo "Oled täiskasvanu"
+	echo "Oled taiskasvanu"
 #
-fi # sellega väljastakse tulemused
-# skripti lõpp
+fi # sellega valjastakse tulemused
+#
+

@@ -1,8 +1,6 @@
 #!/bin/bash
 #
-# Kui vana on kasutaja
-#
-# skripti algus
+# vanuse vaartuse avaldised
 #
 if test $vanus -gt 0 -a $vanus -lt 11
 then
@@ -18,6 +16,4 @@ then
 	echo "oled senioor"
 else
 	echo "vigane sisend"
-#
-fi # sellega valjastatakse tulemused
-# skripti lopp
+fi 

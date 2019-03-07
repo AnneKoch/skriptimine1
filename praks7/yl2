@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# kuu jargi aastaaja valjastus
+#
+echo -n "Sisesta kuu number: "
+read kuu
+#
+if test $kuu -eq 1 -o $kuu -eq 2 -o $kuu -eq 12
+then
+	echo "Praegu on talv"
+fi
+# skripti lopp
